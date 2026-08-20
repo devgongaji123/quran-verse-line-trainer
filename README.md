@@ -13,6 +13,18 @@ This project trains a YOLOv26s model to detect the horizontal separator lines (m
 - **Classes**: `maqta` (verse separator line)
 - **Storage**: Cloudflare R2 via DVC
 
+## Pretrained Model
+
+The pretrained model weights are available on Hugging Face:
+
+**[devgongaji/yolov26-quran-verse-line-detector](https://huggingface.co/devgongaji/yolov26-quran-verse-line-detector)**
+
+```bash
+# Download with huggingface-cli
+pip install huggingface_hub
+huggingface-cli download devgongaji/yolov26-quran-verse-line-detector --local-dir ./weights
+```
+
 ## Quick Start
 
 ### 1. Setup Dataset
