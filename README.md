@@ -1,6 +1,6 @@
 # YOLOv26 Quran Verse Line Detection
 
-YOLO-based object detection for detecting verse lines (maqta) in Quran images.
+YOLO-based object detection for detecting verse lines in Quran images.
 
 ## Overview
 
