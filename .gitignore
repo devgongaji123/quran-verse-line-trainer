@@ -1,4 +1,5 @@
 .dvc/config
+.dvc/config.local
 .venv-*/
 __pycache__/
 *.pyc
@@ -9,3 +10,9 @@ wandb/
 *.log
 /dataset
 /quran_verse_line_dataset.zip
+/data.remote.yaml
+/train.remote.txt
+/val.remote.txt
+*.pt
+*.onnx
+*.engine

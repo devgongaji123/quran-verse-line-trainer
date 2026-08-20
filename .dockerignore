@@ -1,0 +1,17 @@
+.git
+.dvc/cache
+.dvc/tmp
+.dvc/config
+.dvc/config.local
+.venv-*
+__pycache__
+*.pyc
+.DS_Store
+dataset
+runs
+wandb
+*.log
+quran_verse_line_dataset.zip
+*.pt
+*.onnx
+*.engine

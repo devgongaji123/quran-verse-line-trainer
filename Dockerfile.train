@@ -1,0 +1,30 @@
+FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    MPLCONFIGDIR=/tmp/matplotlib \
+    YOLO_CONFIG_DIR=/tmp/ultralytics
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        git \
+        libgl1 \
+        libglib2.0-0 \
+        rsync \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN python -m pip install --upgrade pip \
+    && python -m pip install \
+        ultralytics==8.4.123 \
+        opencv-python==5.0.0.93 \
+        matplotlib \
+        pi-heif \
+        polars \
+        ultralytics-thop \
+        ultralytics-platform \
+        nvidia-ml-py
+
+WORKDIR /workspace/quran-verse-line-labeler
+
+CMD ["yolo", "checks"]
