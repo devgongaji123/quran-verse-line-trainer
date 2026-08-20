@@ -8,6 +8,15 @@ This project trains a YOLOv26s model to detect the horizontal separator lines (m
 
 ## Dataset
 
+The dataset contains annotated Quran page images from four different mushaf editions:
+
+| Mushaf | Description |
+|--------|-------------|
+| **Mina Tajwid** | Mina mushaf with tajwid color coding |
+| **Mina Non Tajwid** | Mina mushaf without tajwid color coding |
+| **Quba** | Quba digital mushaf |
+| **Tikrar Tajwid** | Tikrar mushaf with tajwid color coding |
+
 - **Images**: 2,266 (WebP format)
 - **Split**: 1,812 train / 454 validation
 - **Classes**: `maqta` (verse separator line)
