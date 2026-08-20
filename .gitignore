@@ -1,0 +1,11 @@
+.dvc/config
+.venv-*/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+runs/
+wandb/
+*.log
+/dataset
+/quran_verse_line_dataset.zip

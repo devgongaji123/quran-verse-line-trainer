@@ -1,0 +1,4 @@
+path: /Users/syaamil/development/YOLOv26/dataset
+train: ../train.txt
+val: ../val.txt
+names: ['maqta']
